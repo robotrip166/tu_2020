@@ -1,0 +1,58 @@
+ZAD 1:
+
+#include <stdio.h>
+
+int main() {
+    int age;
+    char info[] = " Zahari Tasev 141220052";
+    
+    printf("Enter your age: ");
+    scanf("%d",&age);
+    
+    printf("\nYour age is %d", age);
+    printf("\n%s",info);
+}
+
+---------------------------------------------------------------------------------------------------------------
+
+ZAD 2:
+
+#include <stdio.h>
+ 
+int main(void) {
+    float velocity_mph;
+    float MILES_INTO_KILOMETERS= 1.60934;
+
+    printf("Enter m/ph:");
+    scanf("%f", &velocity_mph);
+
+    float velocity_kmph = velocity_mph * MILES_INTO_KILOMETERS;
+
+    printf("%f km/ph", velocity_kmph);
+}
+
+---------------------------------------------------------------------------------------------------------------
+
+ZAD 3:
+
+#include <stdio.h>
+ 
+int main()
+{
+    float X=12.0f;
+    float Y=6.0f;
+
+    float solution1=((1/((X*X)+1))+(Y*Y/((Y*Y)-1))+(5/((X*X)+(Y*Y))))/(1/((X*X)-(Y*Y)));
+
+    printf("solution 1: %f\n",solution1);
+
+    float a=1/((X*X)+1);
+    float a1=Y*Y/((Y*Y)-1);
+    float a2=5/((X*X)+(Y*Y));
+    float a3 =1/((X*X)-(Y*Y));
+    float solution2=(a+a1+a2)/a3;
+
+    printf("solution 2: %f",solution2);
+}
+
+---------------------------------------------------------------------------------------------------------------
