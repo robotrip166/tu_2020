@@ -1,0 +1,79 @@
+ZAD 1:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+   int x, y;
+   
+   printf ("Enter x value: ");
+   scanf("%d", &x);
+   printf ("Enter y value: ");
+   scanf("%d", &y);
+   
+   x = x + y;
+   y = x - y;
+   x = x - y;
+   
+   printf ("Swap: x = %d y = %d", x, y);
+   
+}
+
+------------------------------------------------------
+
+ZAD 2:
+
+#include <stdio.h>
+
+int main()
+{
+    float S = 20, r = 0, pi = 3.14;
+    float circle_S = 0;
+    float diff = 0;
+    
+    printf("r =");
+    scanf("%f",&r);
+    
+    circle_S = pi * r * r;
+    
+    diff = S - circle_S;
+    
+    printf("Difference is: %.3f", diff);
+}
+
+-------------------------------------------------------------
+
+ZAD 3:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    float P, a, b, c;
+    int xa, xb, xc;
+    int ya, yb, yc;
+    
+    printf("Enter xa: ");
+    scanf("%d", &xa);
+    printf("Enter ya: ");
+    scanf("%d", &ya);
+    
+    printf("Enter xb: ");
+    scanf("%d", &xb);
+    printf("Enter yb: ");
+    scanf("%d", &yb);
+    
+    printf("Enter xc: ");
+    scanf("%d", &xc);
+    printf("Enter yc: ");
+    scanf("%d", &yc);
+    
+    a = sqrt((xb - xa)*(xb - xa) + (yb - ya)*(yb - ya));
+    b = sqrt((xb - xc)*(xb - xc) + (yb - yc)*(yb - yc));
+    c = sqrt((xa - xc)*(xa - xc) + (ya - yc)*(ya - yc));
+    
+    P = a + b + c;
+    
+    printf ("Area is: %.3f", P);
+    
+}
